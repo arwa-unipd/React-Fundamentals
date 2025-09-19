@@ -42,7 +42,7 @@ function App() {
       {isLoading ? (
         <Loader />
       ) : (
-        <List items={tours} onRemoveItem={handleRemove} />
+        <List items={tours} onRemoveItem={handleRemove} refetch={getData} />
       )}
     </div>
   )
